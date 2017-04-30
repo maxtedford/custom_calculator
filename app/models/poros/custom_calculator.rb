@@ -1,4 +1,4 @@
-class CustomCalculator
+class Poros::CustomCalculator
   attr_reader :calculation
 
   MULTIPLACTOR = /[\/\*]/
