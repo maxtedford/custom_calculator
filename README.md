@@ -1,24 +1,5 @@
-# README
+# Custom Calculator
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A custom calculator application using Ruby and Rails, with complete disregard for UX, and no time spent on refactoring or optimizing. Simply making it work.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Run tests with `rails test`.
