@@ -16,4 +16,9 @@ class CustomCalculatorTest < ActiveSupport::TestCase
     expected_sequence = ["5", "*", "3", "+", "1", "+", "6", "/", "2", "+", "9", "*", "100"]
     assert_equal expected_sequence, calculator.to_sequence
   end
+
+  test 'it multiplies and divides first' do
+    calculator = CustomCalculator.new(@calculation)
+    assert_equal [15.0, "+", "1", "+", 3.0, "+", 900.0], calculator.run_multiplactors
+  end
 end
