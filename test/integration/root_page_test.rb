@@ -14,5 +14,6 @@ class RootPageTest < ActionDispatch::IntegrationTest
     fill_in 'operation', with: '1+1'
     click_button 'Calculate'
     assert page.has_content? '1+1'
+    assert page.has_content? '2'
   end
 end
