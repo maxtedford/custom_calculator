@@ -21,4 +21,10 @@ class CustomCalculatorTest < ActiveSupport::TestCase
     calculator = CustomCalculator.new(@calculation)
     assert_equal [15.0, "+", "1", "+", 3.0, "+", 900.0], calculator.run_multiplactors
   end
+
+  test 'it runs addition and subtraction second' do
+    calculator = CustomCalculator.new(@calculation)
+    first_run_result = calculator.run_multiplactors
+    assert_equal 919, calculator.evaluate
+  end
 end

@@ -31,4 +31,13 @@ class CustomCalculator
       accum
     end
   end
+
+  def evaluate
+    final_sequence = run_multiplactors.dup
+    starting_point = final_sequence.shift.to_f
+    final_sequence.each_with_index.inject(starting_point) do |accum, (j, i)|
+      accum = accum.send(j, final_sequence[i+1].to_i) if j =~ SUBTRADDITION
+      accum
+    end
+  end
 end
