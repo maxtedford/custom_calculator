@@ -3,6 +3,7 @@ class CalculatorController < ApplicationController
   end
 
   def create
-    redirect_to :root
+    @operation = params[:operation]
+    render :index
   end
 end

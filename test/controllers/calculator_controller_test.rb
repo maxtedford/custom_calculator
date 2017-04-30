@@ -7,7 +7,7 @@ class CalculatorControllerTest < ActionDispatch::IntegrationTest
   end
 
   test 'should post to create' do
-    post calculator_index_path, params: { operation: '5*3+1+6/2+9*100' }
-    assert_redirected_to root_path
+    post calculator_index_path, params: { operation: '1+1' }
+    assert_current_path root_path
   end
 end
