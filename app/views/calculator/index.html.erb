@@ -4,4 +4,7 @@
   <%= text_field_tag :operation %>
   <%= submit_tag 'Calculate' %>
 <% end %>
-<p><%= @operation if @operation %></p>
+<% if @operation && @result %>
+  <p><%= @operation %></p>
+  <p><%= @result %></p>
+<% end %>
