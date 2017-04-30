@@ -1,1 +1,6 @@
 <h1>Calculator</h1>
+<%= form_tag controller: 'calculator', action: 'create', method: 'post' do %>
+  <%= label_tag  :operation, 'Enter operation'%>
+  <%= text_field_tag :operation %>
+  <%= submit_tag 'Calculate' %>
+<% end %>
